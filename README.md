@@ -5,4 +5,4 @@ Tokyo University of Science
 
 
 # Training Unconditional Latent Diffusion models
-First, we train the VAE part of an LDM forcing its encoder E to output a domain-independent feature using both source and target domain dataset $D$ . To train 
+First, we train the VAE part of an LDM forcing its encoder E to output a domain-independent feature using both source and target domain dataset $D_s$ . 
