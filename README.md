@@ -23,3 +23,8 @@ python UNet_train.py
 python finetuning_VAE.py
 ```
 
+# Genrate Images using fine-tuned VAE decoder
+```
+python LDDIM_test.py
+```
+
