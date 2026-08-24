@@ -22,6 +22,7 @@ python finetuning_VAE.py
 ```
 
 # Generating Images Using the Fine-Tuned VAE Decoder
+Finally, we generate images using the diffusion model paired with the fine-tuned VAE decoder.
 ```
 python LDDIM_test.py
 ```
