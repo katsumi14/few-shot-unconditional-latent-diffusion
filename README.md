@@ -9,9 +9,7 @@ First, we train the VAE part of an LDM forcing its encoder E to output a domain-
 ```
 python VAE_train.py
 ```
-You can change the training sets in comand line arguments like the index of GPU```-g N ```, batch size ``` -b N ``` and epoch number ``` -e N ```, etc.
-
-Next, we train the UNet part of an LDM using source domain dataset $\mathcal{D}_s$. Actually, to train the UNet part efficiently, we use feature maps that is enoded by trained VAE Enoder $E$. Threfore, we prepare the source domain featuremaps. After that, we train the UNet part.
+Next, we train the UNet model of the LDM using the source domain dataset $\mathcal{D}_s$. To improve training efficiency, we first extract and cache the latent feature maps from the pre-trained VAE encoder $E$. We then train the UNet using these pre-computed feature representations$\mathcal{D'}_s={x\| E(x)}$.
 ```
 python detect_features.py
 python UNet_train.py
