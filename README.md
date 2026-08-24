@@ -11,7 +11,7 @@ python VAE_train.py
 ```
 You can change the training sets in comand line arguments like the index of GPU```-g N ```, batch size ``` -b N ``` and epoch number ``` -e N ```, etc.
 
-Next, we train the UNet part of an LDM using source domain dataset $\matchal{D}_s$. Actually, to train the UNet part efficiently, we use feature maps that is enoded by trained VAE Enoder $E$. Threfore, we prepare the source domain featuremaps. After that, we train the UNet part.
+Next, we train the UNet part of an LDM using source domain dataset $\mathcal{D}_s$. Actually, to train the UNet part efficiently, we use feature maps that is enoded by trained VAE Enoder $E$. Threfore, we prepare the source domain featuremaps. After that, we train the UNet part.
 ```
 python detect_features.py
 python UNet_train.py
