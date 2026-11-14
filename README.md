@@ -3,6 +3,7 @@ Katsumi Yamada, Kazuaki Nakamura
 Tokyo University of Science
 !["our method"](images/fine_tuning.png)
 
+**Note:** In Section 3.2 (Eq. (2) and (3)) of the paper, `n1loss` is mistakenly written as `n2loss`. Please refer to the implementation in this repository (`n1loss`).
 
 # Training Unconditional Latent Diffusion models
 First, we train the VAE component of an LDM forcing its encoder E to output a domain-independent feature using whole training dataset $\mathcal{D}=\mathcal{D}_s \cup \mathcal{D}_t$ . 
